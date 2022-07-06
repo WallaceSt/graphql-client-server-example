@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import { ApolloServer, gql } from "apollo-server-express";
 
-import { typeDefs } from "./graphql/TypeDefs";
+import typeDefs from "./graphql/TypeDefs";
 import resolvers from "./graphql/Resolvers";
 
 const app = express();
