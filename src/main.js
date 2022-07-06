@@ -3,8 +3,14 @@ import { createServer } from "http";
 const server = createServer((request, response) => {
     switch (request.url) {
         case "/status": {
-            response.writeHead(200);
-            response.write("Okay");
+            response.writeHead(200, {
+                'Content-Type': 'application/json'
+            });
+            response.write(JSON.stringify(
+                {
+                    status: "Okay"
+                }
+            ));
             response.end();
             break;
         }
