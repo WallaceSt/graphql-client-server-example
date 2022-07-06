@@ -12,7 +12,7 @@ export const typeDefs = gql`
   }
   extend type Query {
     client(id: ID!): Client
-    #clients: [Client!]!
+    clients: [Client!]!
   }
 `;
 
@@ -21,6 +21,10 @@ export const resolvers = {
     client: async (_, { id }) => {
       const clients = await clientRepository.read();
       return clients.find((client) => client.id === id);
+    },
+
+    clients: async () => {
+      return await clientRepository.read();
     },
   },
 };
