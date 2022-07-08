@@ -698,5 +698,11 @@
     "last_name": "Van der Velden",
     "email": "nvan2r@ted.com",
     "disabled": true
+  },
+  {
+    "id": "7acedd95-f5cc-4fdc-b09e-d94a16ccbee8",
+    "name": "Wallace Santos",
+    "email": "wall_tec@hotmail.com",
+    "disabled": false
   }
 ]

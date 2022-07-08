@@ -5,10 +5,12 @@ export const typeDefs = gql`
     items: [Node!]!
     totalItems: Int!
   }
+
   enum ListSortmentEnum {
     ASC
     DESC
   }
+  
   input ListSort {
     sorter: String!
     sortment: ListSortmentEnum!

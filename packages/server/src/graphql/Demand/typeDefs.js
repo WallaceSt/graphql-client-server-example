@@ -7,6 +7,7 @@ export const typeDefs = gql`
     client: Client!
     deadline: String
   }
+  
   extend type Query {
     demands: [Demand]!
   }
