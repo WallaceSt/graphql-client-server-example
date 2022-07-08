@@ -19,9 +19,3 @@ export const ListSortmentEnum = Object.freeze({
   ASC: 'ASC',
   DESC: 'DESC',
 });
-
-export const resolvers = {
-  List: {
-    __resolveType: () => null,
-  },
-};

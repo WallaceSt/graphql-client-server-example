@@ -1,7 +1,7 @@
-import { resolvers as nodeResolvers } from './Node/Node';
-import { resolvers as listResolvers } from './List/List';
-import { resolvers as clientResolvers } from './Client/Client';
-import { resolvers as demandResolvers } from './Demand/Demand';
+import { resolvers as nodeResolvers } from './Node//resolvers';
+import { resolvers as listResolvers } from './List/resolvers';
+import { resolvers as clientResolvers } from './Client/resolvers';
+import { resolvers as demandResolvers } from './Demand/resolvers';
 
 const resolvers = {
   ...nodeResolvers,
