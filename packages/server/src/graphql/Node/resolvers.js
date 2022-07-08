@@ -1,5 +1,5 @@
 export const resolvers = {
-  List: {
+  Node: {
     __resolveType: () => null,
   },
 };

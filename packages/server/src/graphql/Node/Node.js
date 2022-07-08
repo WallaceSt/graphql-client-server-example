@@ -6,8 +6,3 @@ export const typeDefs = gql`
     }
 `;
 
-export const resolvers = {
-    Node: {
-        __resolveType: () => null,
-    },
-};
